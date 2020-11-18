@@ -27,7 +27,8 @@ function squaresListener() {
     squares.forEach(function (e) {
         e.addEventListener('mouseenter', function (e) {
             this.classList.add('colored');
-            this.style.cssText = 'background-color: ' + rgbColor() + ';box-shadow: inset 0.08em 0.08em 0.1em rgba(0, 0, 0, 0.2),inset -0.08em -0.08em 0.1em rgba(0, 0, 0, 0.2);';
+            this.style.cssText = 'background-color: ' + rgbColor() +
+                ';box-shadow: inset 0.08em 0.08em 0.1em rgba(0, 0, 0, 0.2),inset -0.08em -0.08em 0.1em rgba(0, 0, 0, 0.2);';
         });
     });
     if (colored) {
@@ -43,10 +44,10 @@ function squaresListener() {
 //     squares.forEach(function (e) {
 //         container.removeChild(e);
 //     });
-//     let values = Number(prompt('escoge un numero del 1 al 100', ''));
+//     let values = Number(prompt('choose a number from 1 to 100', ''));
 
 //     if (values == String || values < 1 || values > 100) {
-//         values = Number(prompt('entrada no valida,
+//         values = Number(prompt('invalid input,
 //   plese type a number between 1 and 100', ''));
 //     } else if (values >= 1 && values <= 100) {
 //         console.log(values);
@@ -60,7 +61,7 @@ function reDrawItems(values) {
         container.removeChild(e);
     });
     if (values == String || values < 1 || values > 100) {
-        alert('Entrada no valida, regresando a la secuencia de inicio....');
+        alert('Invalid input, rolling back the settings to the beginning....');
         drawItems(4);
     } else if (values >= 1 && values <= 100) {
         drawItems(values);
