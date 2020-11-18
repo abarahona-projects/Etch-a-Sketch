@@ -27,7 +27,7 @@ function squaresListener() {
     squares.forEach(function (e) {
         e.addEventListener('mouseenter', function (e) {
             this.classList.add('colored');
-            this.style.cssText = 'background-color: ' + rgbColor() + ';';
+            this.style.cssText = 'background-color: ' + rgbColor() + ';box-shadow: inset 0.08em 0.08em 0.1em rgba(0, 0, 0, 0.2),inset -0.08em -0.08em 0.1em rgba(0, 0, 0, 0.2);';
         });
     });
     if (colored) {
