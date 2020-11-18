@@ -33,7 +33,6 @@ function squaresListener() {
     if (colored) {
         colored.forEach(function (e) {
             e.addEventListener('onchange', function (e) {
-                console.log(this);
             })
         });
     }
@@ -64,7 +63,6 @@ function reDrawItems(values) {
         alert('Entrada no valida, regresando a la secuencia de inicio....');
         drawItems(4);
     } else if (values >= 1 && values <= 100) {
-        console.log(values);
         drawItems(values);
     }
 }
