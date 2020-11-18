@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap" rel="stylesheet">
+    <title>Etch-A-Sketch Project</title>
+</head>
+
+<body>
+    <div class="Title">
+        <header>
+            <h1>Etch-A-Sketch</h1>
+        </header>
+    </div>
+    <div class="buttons">
+        <label for="value">Escoge o escribe el numero de celdas: </label>
+        <input type="number" name="value" id="numeric" min="1" max="100" value="4">
+        <p>El numero de celdas se multiplicara por si mismo para conseguir un cuadrado.</p>
+        <p>Solo se admitiran numeros del 1 al 100.</p>
+        <button class="clear">Reiniciar</button>
+    </div>
+
+    <div class="container"></div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
